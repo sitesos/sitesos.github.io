@@ -2,212 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Builder</title>
+        <meta charset="UTF-8">
+<meta name="description" content="Free online website builder WebBuild">
+<meta name="keywords" content="Website builder, website building, create websites for free, website creator, my own website, HTML, CSS, JavaScript">
+<meta name="google-site-verification" content="8DnQF6B5vVJqVxG302sgmEdiYJnPx2dtBalyPMX9p2c">
+<meta name="author" content="fiftys7ven">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="WebBuild - Free Online Website Builder">
+<meta property="og:description" content="Create stunning websites for free with WebBuild. No coding skills required.">
+<meta property="og:image" content="https://webbuild.js.org/src3.png">
+<meta property="og:url" content="https://webbuild.js.org">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WebBuild - Free Online Website Builder">
+<meta name="twitter:description" content="Create stunning websites for free with WebBuild. No coding skills required.">
+<meta name="twitter:image" content="https://webbuild.js.org/src3.png">
+
+<link rel="canonical" href="https://webbuild.js.org">
+
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "WebBuild",
+  "url": "https://webbuild.js.org",
+  "description": "Free online website builder WebBuild"
+}
+</script>
+    <style>body{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}</style>
+    <link rel="icon" href="logo.png">
+    <link rel="manifest" href="/manifest.webmanifest">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Layout container */
-        .container {
-            display: flex;
-            height: 100vh;
-        }
-
-        /* Navigation bar styling */
-        #navigationbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 20%;
-            height: 100%;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        #navigationbar h2 {
-            color: #fff;
-            margin-bottom: 20px;
-        }
-
-        #navigationbar ul {
-            list-style-type: none;
-        }
-
-        #navigationbar ul li {
-            margin: 10px 0;
-        }
-
-        #navigationbar ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            display: block;
-            padding: 10px 0;
-            transition: color 0.3s ease;
-        }
-
-        #navigationbar ul li a:hover {
-            color: #ff6f61;
-        }
-
-        /* Preview container styling */
-        #websitepreview {
-            flex: 1;
-            background-color: #fff;
-            margin-left: 20%;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            overflow-y: auto;
-            transition: all 0.3s ease;
-        }
-
-        /* JS Editor and Sidebar */
-        #jseditor {
-            display: none;
-            flex: 1;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-left: 20%;
-        }
-
-        /* Buttons */
-        .button, button {
-            background-color: #ff6f61;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover, button:hover {
-            background-color: #e55e50;
-        }
-
-        /* Sidebar items */
-        #itemssidebar {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            width: 250px;
-            background-color: #f9f9f9;
-            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-left: 20px;
-        }
-
-        #itemssidebar button {
-            margin-bottom: 15px;
-        }
-
-        /* Modal dialogs */
-        .ui-dialog-titlebar {
-            background-color: #ff6f61;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        .ui-dialog-buttonpane button {
-            background-color: #ff6f61;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        .ui-dialog-buttonpane button:hover {
-            background-color: #e55e50;
-        }
-    </style>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <title>WebBuild Website Builder</title>
 </head>
 <body>
-
-<div class="container">
-    <!-- Left Sidebar (Navigation) -->
-    <div id="navigationbar">
-        <h2>WebBuilder</h2>
-        <ul>
-            <li><a href="#" id="togglemodebutton" title="Toggle Design/Code Mode">Code</a></li>
-            <li><a href="#" onclick="save();">Save</a></li>
-            <li><a href="#" onclick="exportToHTML();">Export</a></li>
-            <li><a href="#" onclick="deleteItem();">Delete Item</a></li>
-        </ul>
+    <div id="itemssidebar" style="text-align: center; height:100%;width:20%;position:fixed!important;z-index:1;overflow:auto">
+        <h2>Items</h2>
+        <p><small>Text Elements</small></p><hr>
+        <p><button onclick="addItem('heading1')" title="Text element typically used for website titles.">Heading 1</button></p>
+        <p><button onclick="addItem('heading2')" title="Text element typically used for section titles.">Heading 2</button></p>
+        <p><button onclick="addItem('heading3')" title="Text element typically used for subsection titles.">Heading 3</button></p>
+        <p><button onclick="addItem('text')" title="Standard text element for paragraphs.">Text</button></p>
+        <p><button onclick="addItem('quote')" title="Text element used for displaying quotes.">Quote</button></p>
+    
+        <p><small>Interactive Elements</small></p><hr>
+        <p><button onclick="addItem('link')" title="Hyperlink element for navigation.">Link</button></p>
+        <p><button onclick="addItem('button')" title="Clickable button for interactions.">Button</button></p>
+        <p><button onclick="addItem('inputfield')" title="Field for user input.">Input Field</button></p>
+        <p><button onclick="addItem('inputbox')" title="Box for multiline user input.">Input Box</button></p>
+        <p><button onclick="addItem('checkbox')" title="Checkbox for selection.">Checkbox</button></p>
+        <p><button onclick="addItem('progressbar')" title="Visual indicator of progress.">Progress Bar</button></p>
+    
+        <p><small>Structural Elements</small></p><hr>
+        <p><button onclick="addItem('footer')" title="Footer section of the webpage.">Footer</button></p>
+        <p><button onclick="addItem('separator')" title="Horizontal line for separation of content.">Separator</button></p>
+        <p><button onclick="addItem('card')" title="Card element for grouping related content.">Card</button></p>
+    
+        <p><small>Data Elements</small></p><hr>
+        <p><button onclick="addItem('table')" title="Table for displaying tabular data.">Table</button></p>
+        <p><button onclick="addItem('image')" title="Image element for displaying pictures.">Image</button></p>
+    
+        <p><small>Embedded Elements</small></p><hr>
+        <p><button onclick="addItem('websiteembed')" title="Embed another website within the page.">Website Embed</button></p>
+        <p><button onclick="addItem('customhtml')" title="Add custom HTML content.">Custom HTML</button></p>
+        <hr>
     </div>
-
-    <!-- Main Content Area -->
-    <div id="websitepreview">
-        <h1>Welcome to WebBuilder!</h1>
-        <p>Use the sidebar to create and edit your website content. You can add text, images, buttons, and much more.</p>
-        <div id="websitepreviewjs"></div>
+    
+    
+    <div id="navigationbar" style="margin-left:20%;width:100%;overflow:hidden;padding:5px;">
+        <div onclick="exportToHTML()" class="button" title="Exports your website to HTML code.">Export to HTML</div>
+        <div onclick="deleteItem()" class="button" title="Allows you to delete an item.">Delete Item</div>
+        <div onclick="editSetting()" class="button" title="Allows you to change any HTML property of an item.">Edit Setting</div>
+        <div onclick="save()" class="button" title="Save's your site to the WebBuild panel.">Save</div>
+        <div id="togglemodebutton" onclick="toggleMode()" class="button" title="Opens the JavaScript code editor.">Code</div>
+        <div onclick="window.location.assign('index.html')" class="button" title="Redericts you to the homepage.">Panel</div>
     </div>
+      
+    <div id="websitepreview" style="margin-left:20%;text-align: center;"><script id="websitepreviewjs"></script></div>
+    <div id="jseditor" style="display: none;"><textarea spellcheck="false" style="width: 100%; resize:vertical;" placeholder="JavaScript code here..." id="jscode"></textarea> <p style="width: 100%;" class="button" onclick="saveCode()">Save</p></div>
 
-    <!-- Sidebar for adding items -->
-    <div id="itemssidebar">
-        <h3>Add Items</h3>
-        <button class="button" onclick="addItem('heading1')">Add Heading 1</button>
-        <button class="button" onclick="addItem('heading2')">Add Heading 2</button>
-        <button class="button" onclick="addItem('heading3')">Add Heading 3</button>
-        <button class="button" onclick="addItem('text')">Add Text</button>
-        <button class="button" onclick="addItem('link')">Add Link</button>
-        <button class="button" onclick="addItem('button')">Add Button</button>
-        <button class="button" onclick="addItem('image')">Add Image</button>
-        <button class="button" onclick="addItem('footer')">Add Footer</button>
-        <button class="button" onclick="addItem('table')">Add Table</button>
-        <button class="button" onclick="addItem('separator')">Add Separator</button>
+    <div id="alertDialog" title="Alert" style="display:none;">
+        <p id="alertMessage"></p>
     </div>
-</div>
+    <div id="confirmDialog" title="Confirm" style="display:none;">
+        <p id="confirmMessage"></p>
+    </div>
+    <div id="promptDialog" title="Prompt" style="display:none;">
+        <p id="promptMessage"></p>
+        <input type="text" id="promptInput" style="width:100%;" />
+    </div>
+    <div id="localStorageNotice" style="background-color: #f8f8f8; padding: 10px; text-align: center; font-size: 14px; position: relative;">
+        This site stores your nickname and site content locally in your browser to enable editing and personalization features. No data is sent to a server.
+        <button id="closeNotice" style="background-color: transparent; border: none; font-size: 14px; cursor: pointer; position: absolute; right: 5px; top: -5px;"><strong>&times;</strong></button>
+</body>
 
-<!-- JS Editor -->
-<div id="jseditor">
-    <h2>JavaScript Code Editor</h2>
-    <textarea id="jscode" style="width: 100%; height: 300px;"></textarea>
-    <button class="button" onclick="saveCode();">Save Code</button>
-</div>
-
-<!-- Modal Dialogs (Alert, Prompt, Confirm) -->
-<div id="alertDialog" title="Alert">
-    <p id="alertMessage"></p>
-</div>
-
-<div id="confirmDialog" title="Confirmation">
-    <p id="confirmMessage"></p>
-</div>
-
-<div id="promptDialog" title="Prompt">
-    <p id="promptMessage"></p>
-    <input type="text" id="promptInput" style="width: 100%;">
-</div>
-
+<script src="builder.js"></script>
 <script>
-// Your original JS code here
-// Make sure to keep the code intact and no changes to JS
+    document.getElementById('closeNotice').addEventListener('click', function() {
+var notice = document.getElementById('localStorageNotice');
+notice.style.display = 'none';
+localStorage.setItem('noticeClosed', 'true');
+});
+
+window.onload = function() {
+if (localStorage.getItem('noticeClosed') === 'true') {
+    document.getElementById('localStorageNotice').style.display = 'none';
+}
+};
+
 </script>
 
-</body>
 </html>
