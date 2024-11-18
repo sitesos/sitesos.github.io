@@ -99,22 +99,10 @@
             color: #333;
         }
 
-        .fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="container fade-in">
+    <div class="container">
         <div class="title">Configure Sitesos</div>
         <div id="step1">
             <input id="usernameinput" type="text" placeholder="Enter your username..." aria-label="Username">
@@ -124,20 +112,20 @@
             </div>
             <button onclick="completeSetup()" class="btn btn-primary mt-3">Continue</button>
         </div>
-        <div id="localStorageNotice" class="local-storage-notice fade-in">
+        <div id="localStorageNotice" class="local-storage-notice">
             This site stores your nickname and content locally to enhance personalization. No data is sent to a server.
             <button id="closeNotice" class="close-notice"><strong>&times;</strong></button>
         </div>
     </div>
 
     <script>
-        document.getElementById('closeNotice').addEventListener('click', function () {
+        document.getElementById('closeNotice').addEventListener('click', function() {
             var notice = document.getElementById('localStorageNotice');
             notice.style.display = 'none';
             localStorage.setItem('noticeClosed', 'true');
         });
 
-        window.onload = function () {
+        window.onload = function() {
             if (localStorage.getItem('noticeClosed') === 'true') {
                 document.getElementById('localStorageNotice').style.display = 'none';
             }
@@ -158,8 +146,6 @@
             }
 
             alert(`Welcome, ${username}! Your setup is complete.`);
-            // Simulate redirect
-            window.location.href = 'https://sitesos.github.io/builder';
         }
     </script>
 </body>
