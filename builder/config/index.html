@@ -4,149 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Sitesos Configuration</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #ffffff; /* White background */
-            color: #333;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            background: #000000; /* Black box */
-            color: #ffffff; /* White text for contrast */
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            margin: auto;
-        }
-
-        .title {
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #ffffff;
-        }
-
-        #usernameinput {
-            width: 100%;
-            border: 1px solid #444;
-            border-radius: 8px;
-            padding: 10px;
-            font-size: 1rem;
-            margin-bottom: 15px;
-            color: #000000;
-            background: #ffffff;
-            transition: all 0.3s ease;
-        }
-
-        #usernameinput:focus {
-            border-color: #00c8ff;
-            outline: none;
-            box-shadow: 0 0 4px rgba(0, 200, 255, 0.6);
-        }
-
-        .btn-primary {
-            width: 100%;
-            padding: 10px;
-            font-size: 1.1rem;
-            border-radius: 8px;
-            background-color: #00c8ff;
-            color: #ffffff;
-            border: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #007bbf;
-        }
-
-        .form-check-label {
-            font-size: 0.9rem;
-            color: #cccccc;
-        }
-
-        .local-storage-notice {
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
-            text-align: center;
-            font-size: 0.9rem;
-            margin: 20px 0;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            color: #333;
-        }
-
-        .close-notice {
-            background-color: transparent;
-            border: none;
-            font-size: 1.2rem;
-            cursor: pointer;
-            color: #666;
-            line-height: 1;
-        }
-
-        .close-notice:hover {
-            color: #333;
-        }
-
-    </style>
+    <title>Sitesos Config</title>
 </head>
 <body>
-    <div class="container">
-        <div class="title">Configure Sitesos</div>
-        <div id="step1">
-            <input id="usernameinput" type="text" placeholder="Enter your username..." aria-label="Username">
-            <div class="form-check">
-                <input id="agreetotos" class="form-check-input" type="checkbox">
-                <label class="form-check-label" for="agreetotos">I agree to the <a href="#" class="text-primary">Terms of Service</a>.</label>
-            </div>
-            <button onclick="completeSetup()" class="btn btn-primary mt-3">Continue</button>
-        </div>
-        <div id="localStorageNotice" class="local-storage-notice">
-            This site stores your nickname and content locally to enhance personalization. No data is sent to a server.
-            <button id="closeNotice" class="close-notice"><strong>&times;</strong></button>
-        </div>
+    <h1>Configure Sitesos</h1>
+    <div id="step1">
+        <p><input id="usernameinput" type="text" placeholder="Username..."></p>
+        <p><input id="agreetotos" type="checkbox"> I agree to the Terms Of Service.</p>
+        <br>
+        <p><button onclick="completeSetup()" class="btn btn-primary" style="width: 20%;">Continue</button></p>
     </div>
-
-    <script>
-        document.getElementById('closeNotice').addEventListener('click', function() {
-            var notice = document.getElementById('localStorageNotice');
-            notice.style.display = 'none';
-            localStorage.setItem('noticeClosed', 'true');
-        });
-
-        window.onload = function() {
-            if (localStorage.getItem('noticeClosed') === 'true') {
-                document.getElementById('localStorageNotice').style.display = 'none';
-            }
-        };
-
-        function completeSetup() {
-            const username = document.getElementById('usernameinput').value.trim();
-            const agreeToTos = document.getElementById('agreetotos').checked;
-
-            if (!username) {
-                alert('Please enter your username.');
-                return;
-            }
-
-            if (!agreeToTos) {
-                alert('You must agree to the Terms of Service.');
-                return;
-            }
-
-            alert(`Welcome, ${username}! Your setup is complete.`);
-        }
-    </script>
+    <script src="index.js"></script>
+    <div id="localStorageNotice" style="background-color: #f8f8f8; padding: 10px; text-align: center; font-size: 14px; position: relative;">
+        This site stores your nickname and site content locally in your browser to enable editing and personalization features. No data is sent to a server.
+        <button id="closeNotice" style="background-color: transparent; border: none; font-size: 14px; cursor: pointer; position: absolute; right: 5px; top: -5px;"><strong>&times;</strong></button>
 </body>
+<script>
+    document.getElementById('closeNotice').addEventListener('click', function() {
+var notice = document.getElementById('localStorageNotice');
+notice.style.display = 'none';
+localStorage.setItem('noticeClosed', 'true');
+});
+
+window.onload = function() {
+if (localStorage.getItem('noticeClosed') === 'true') {
+    document.getElementById('localStorageNotice').style.display = 'none';
+}
+};
+
+</script>
 </html>
