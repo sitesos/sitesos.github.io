@@ -1,18 +1,11 @@
-# WebBuild - Open Source Website Builder
+# Sitesos - Open Source Website Builder
 
 <br>
 
-> [!WARNING]  
-> Please note that WebBuild has closed it's developement since 10/9/2024.
-> Tutorial to recover your websites will arrive soon.
-> You can still use WebBuild by downloading it on your computer and running it locally.
+[![Website](https://img.shields.io/website?url=https%3A%2F%2FSitesos.js.org)](https://fiftys7vencode.github.io/upptime/history/web-build)
+[![License](https://img.shields.io/github/license/fiftys7vencode/Sitesos)](https://github.com/fiftys7vencode/Sitesos/blob/main/LICENSE)
 
-<br>
-
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwebbuild.js.org)](https://fiftys7vencode.github.io/upptime/history/web-build)
-[![License](https://img.shields.io/github/license/fiftys7vencode/webbuild)](https://github.com/fiftys7vencode/webbuild/blob/main/LICENSE)
-
-WebBuild is a **free**, open-source website builder designed to make website creation intuitive and accessible to everyone. Whether you're a seasoned developer or just starting out, WebBuild provides the tools you need to create beautiful, responsive websites with ease — right from your browser.
+Sitesos is a **free**, open-source website builder designed to make website creation intuitive and accessible to everyone. Whether you're a seasoned developer or just starting out, Sitesos provides the tools you need to create beautiful, responsive websites with ease — right from your browser.
 
 ## Features
 
@@ -24,20 +17,20 @@ WebBuild is a **free**, open-source website builder designed to make website cre
 
 ## Try It Now
 
-Start building your website now with the **[WebBuild Builder](https://webbuild.js.org/builder/index.html)**.
+Start building your website now with the **[Sitesos Builder](https://Sitesos.js.org/builder/index.html)**.
 
 ## Getting Started
 
-To get started with WebBuild, simply visit the builder link and begin designing:
+To get started with Sitesos, simply visit the builder link and begin designing:
 
-- Visit: [WebBuild Builder](https://webbuild.js.org/builder/index.html)
+- Visit: [Sitesos Builder](https://Sitesos.js.org/builder/index.html)
 - Use the simple interface to add elements
 - Customize the elements using the properties panel
 - Publish your website when ready
 
 ## Contributing
 
-We welcome contributions from the community! If you're interested in improving WebBuild, fixing bugs, or adding new features:
+We welcome contributions from the community! If you're interested in improving Sitesos, fixing bugs, or adding new features:
 
 1. Fork the repository on GitHub.
 2. Create a new branch for your feature or bugfix.
@@ -45,14 +38,14 @@ We welcome contributions from the community! If you're interested in improving W
 
 ## Resources
 
-- **Website:** [https://webbuild.js.org](https://webbuild.js.org)
-- **Builder:** [https://webbuild.js.org/builder/index.html](https://webbuild.js.org/builder/index.html)
-- **GitHub Repository:** [https://github.com/fiftys7vencode/webbuild](https://github.com/fiftys7vencode/webbuild)
+- **Website:** [https://Sitesos.js.org](https://Sitesos.js.org)
+- **Builder:** [https://Sitesos.js.org/builder/index.html](https://Sitesos.js.org/builder/index.html)
+- **GitHub Repository:** [https://github.com/fiftys7vencode/Sitesos](https://github.com/fiftys7vencode/Sitesos)
 
 ## License
 
-WebBuild is licensed under the Apache-2.0 License. See the [LICENSE](https://github.com/fiftys7vencode/webbuild/blob/main/LICENSE) file for more details.
+Sitesos is licensed under the Apache-2.0 License. See the [LICENSE](https://github.com/fiftys7vencode/Sitesos/blob/main/LICENSE) file for more details.
 
 ---
 
-Start building the web today with **WebBuild**!
+Start building the web today with **Sitesos**!
