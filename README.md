@@ -2,8 +2,8 @@
 
 <br>
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2FSitesos.js.org)](https://fiftys7vencode.github.io/upptime/history/web-build)
-[![License](https://img.shields.io/github/license/fiftys7vencode/Sitesos)](https://github.com/fiftys7vencode/Sitesos/blob/main/LICENSE)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2FSitesos.js.org)](https://fiftys7vencode.github.io/upptime/history/sitesos)
+[![License](https://img.shields.io/github/license/fiftys7vencode/Sitesos)](https://github.com/Sitesos/Sitesos.github.io/blob/main/LICENSE)
 
 Sitesos is a **free**, open-source website builder designed to make website creation intuitive and accessible to everyone. Whether you're a seasoned developer or just starting out, Sitesos provides the tools you need to create beautiful, responsive websites with ease — right from your browser.
 
